@@ -1,0 +1,144 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+ul#nav {
+	width: 900px; margin: 0 auto; text-align: center; overflow: hidden;
+}
+ul#nav li {
+	float: left; list-style: none; 
+}
+ul#nav li a {
+	display: block; width: 97px; height: 77px; 
+	padding: 32px 0 0 0; margin: 0 32px 0 32px;
+	font: bold 16px Helvetica, Arial, Sans-Serif;
+	color: #9c5959; text-shadow: 0 1px 3px #c4bda6; text-decoration: none;
+	
+	background: url(/img/label.png) 0 -149px no-repeat; 
+}
+ul#nav li a:hover {
+	background: url(/img/label.png) 0 0 no-repeat;
+	color: #eee9d9; text-shadow: 0 2px 3px #4c2222;
+}
+
+ul#nav li a.js:hover {
+	background: url(/img/label.png) 0 -149px no-repeat;
+}
+
+
+@media only screen and (max-width: 800px) {
+  ul#nav li a{
+  	 margin-right: -5px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  ul#nav li a{
+  	 margin-right: -20px;
+  }
+
+   ul#nav {
+  	margin-left: -30px
+  }
+}
+
+
+
+/*Dropdown menu*/
+.more {
+	display: none;
+}
+
+li ul
+{
+    display: none;
+}
+li:hover ul 
+{
+    display: block;
+    position: absolute;
+    background: #CC9999;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 560px) {
+	.more {
+		display: inline;
+	}
+
+	.right-2, .right-1 {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+  ul#nav li a{
+  	 margin-right: -34px;
+  }
+
+   ul#nav {
+  	margin-left: -44px
+  }
+}
+
+/*Images*/
+.img-responsive {
+	width:400px;
+	max-height: 250px;
+	min-height: 249px;
+}
+
+@media screen and (max-width: 1050px) {
+	.img-responsive {
+		max-height: 200px;
+	}
+}
+
+@media screen and (max-width: 910px) {
+	.img-responsive {
+		max-height: 180px;
+	}
+}
+
+
+.big_article_image {
+	width:800px;
+	max-height: 400px;
+
+}
+
+#social-links ul li {
+	display: inline;
+	padding-right: 5px;
+	font-size: 25px;
+}
+
+ .tm-top-bar-notHome {
+  background-color: #CC9999;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.js-cookie-consent {
+	background-color: #b57070;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	position:fixed; 
+	top:auto; 
+	bottom:0;
+	width: 100%;
+}
+
+.js-cookie-consent button {
+	background-color: #602c2c;
+	 border: none;
+      color: white;
+      padding: 16px 32px;
+}
+
+.js-cookie-consent button:hover {
+      background-color: #c18989;
+      cursor: pointer;
+ }
